@@ -44,7 +44,11 @@ export class Bitbucket {
         for(let i = 0; i < 4; i++) await this.page.keyboard.press("Tab");
         await this.page.keyboard.press("Enter");
         
-        //VERIFICATION
+        try{
+            await this.page.waitForSelector('div.error', {timeout: 2000});
+            return false;
+        }catch(ex){
+        }
 
         return true;
     }
