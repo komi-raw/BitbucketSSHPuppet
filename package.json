@@ -1,0 +1,29 @@
+{
+  "name": "bitbucketsshpuppet",
+  "version": "1.0.0",
+  "description": "A simple puppet that connects to Bitbucket, publish a new ssh key, and verify it's functioning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komi-raw/BitbucketSSHPuppet.git"
+  },
+  "keywords": [
+    "node",
+    "puppeteer",
+    "js"
+  ],
+  "author": "Komi-raw",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/komi-raw/BitbucketSSHPuppet/issues"
+  },
+  "homepage": "https://github.com/komi-raw/BitbucketSSHPuppet#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "puppeteer": "^22.14.0"
+  }
+}
