@@ -18,7 +18,7 @@ async function main(){
     } catch(ex){
         console.error('Error : Verify all previous inputs.');
         browser.close();
-        return;
+        process.exit(1);
     }
     if(BC.flag){
         console.error(result);
@@ -26,7 +26,7 @@ async function main(){
         console.log(result);
     }
     browser.close();
-    return;
+    process.exit();
 }
 
 main();
