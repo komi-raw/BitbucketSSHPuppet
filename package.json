@@ -4,7 +4,7 @@
   "description": "A simple puppet that connects to Bitbucket, publish a new ssh key, and verify it's functioning.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

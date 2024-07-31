@@ -16,6 +16,7 @@ export class Bitbucket {
 
     async process() {
         this.page = await this.browser.newPage();
+        this.page.setDefaultTimeout(10000);
         await this.page.setViewport({ width: 1080, height: 1024 });
         await this.page.goto(this._loginPage);
         const loginSuccess = await this.login();
