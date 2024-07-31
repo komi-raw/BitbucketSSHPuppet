@@ -1,3 +1,4 @@
+//https://github.com/komi-raw/BitbucketSSHPuppet.git
 export class Bitbucket {
     _loginPage = "https://id.atlassian.com/login?application=bitbucket";
     _tokenPage = "https://id.atlassian.com/login/security-screen";
