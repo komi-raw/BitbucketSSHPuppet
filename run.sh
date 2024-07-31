@@ -1,2 +1,2 @@
-#!/usr/bin/env node
+#!/usr/bin/bash
 npm install && node index.js
