@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-node index.js
+npm install && node index.js
