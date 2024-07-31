@@ -23,11 +23,12 @@ async function main(){
     }
     if(BC.flag){
         console.error(result);
+        process.exitCode=1;
     } else {
         console.log(result);
+        process.exitCode=0;
     }
     browser.close();
-    process.exitCode=0;
     return;
 }
 
