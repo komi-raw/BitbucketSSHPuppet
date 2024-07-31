@@ -12,8 +12,9 @@ async function main(){
     }
     const browser = await puppeteer.launch({headless: true});
     const BC = new Bitbucket(browser, ENV.parsed.USERMAIL, ENV.parsed.USERPWD, ENV.parsed.USERKEY, ENV.parsed.USERKEYLABEL);
+    let result = '';
     try{
-        const result = await BC.process();
+        result = await BC.process();
     } catch(ex){
         console.error('Error : Verify all previous inputs.');
         browser.close();
